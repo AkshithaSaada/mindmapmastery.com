@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMapMastery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    
+     @keyframes comeAndGo {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px); 
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(0); 
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(50px); 
+            }
+        }
+
+      
+        .animate-come-and-go {
+            animation: comeAndGo 10s ease-in-out infinite;
+        }
+
+.relative {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 600px;
+    position: relative;
+}
+
+
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="font-bold fixed top-0 left-0 w-full bg-purple-500 backdrop-blur-md text-white text-2xl flex justify-between items-center font-serif px-6 py-3 z-10">
+        <h1 class="font-bold">MindMapMastery.com</h1>
+        <ul class="flex space-x-6">
+           <a href="#home"><li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">Home</li></a> 
+           <a href="#careers"> <li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">Careers</li></a>
+            <a href="#"><li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">Resources</li></a>
+            <a href="#blog"><li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">Blog</li></a>
+            <a href="#about"><li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">About</li></a>
+            <a href="#contact"><li class="hover:bg-gray-400 px-3 py-1 rounded cursor-pointer transition duration-300">Contact</li></a>
+        </ul>
+    </div>
+<div id="home" class="text-white font-bold ">
+    <div class="relative flex flex-col justify-end items-center w-full h-[600px]">
+        <img src="image copy.png" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/70"></div>
+        <div class="relative text-center max-w-3xl mx-auto pb-12">
+            <h2 class="text-5xl font-serif font-bold mb-10 animate-come-and-go">Welcome to MindMapMastery</h2>
+            <p class="text-2xl mb-10 animate-come-and-go" style="animation-delay: 0.5s;"><i>~Master your career with actionable insights and powerful tools.</i></p>
+            <button class="bg-purple-500 text-black mb-20 px-10 py-2 text-xl font-semibold rounded-3xl shadow-lg hover:bg-gray-200 transition duration-300">Get Started Today</button>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="bg-gray-900 text-white py-16 text-center">
+        <h3 class="text-4xl font-semibold mb-4">About MindMapMastery</h3>
+        <div class="w-56 mx-auto h-1 bg-purple-400 mt-4"></div>
+        <p class="text-lg max-w-3xl mx-auto mt-10">MindMapMastery is your go-to platform for mastering your career. We provide actionable insights, career resources, and tools to help you succeed. Whether you're looking to advance in your current profession or transition into a new field, our resources will guide you every step of the way. Start today and take control of your future!</p>
+    </div>
+</div>
+<div id="careers">
+    <div class="flex flex-col items-center py-10">
+        <h1 class="text-3xl font-semibold text-white mb-6">Demanding Careers</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-5xl px-4">
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Software Developer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Cyber Security
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Cloud Engineer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Prompt Engineering
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Data Scientist
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Blockchain Developer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                UX/UI Designer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Product Manager
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                AI/ML Engineer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Full Stack Developer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                DevOps Engineer
+            </button>
+            <button class="bg-black text-white border-2 border-purple-400 px-12 py-4 rounded-xl text-xl hover:bg-purple-400 transition duration-300 w-full">
+                Game Developer
+            </button>
+        </div>
+    </div>
+    
+</div>
+<div id="blog">
+
+<div class="bg-gray-900 py-16 text-center">
+    <h3 class="text-4xl font-semibold mb-4 text-white">Latest Blog Posts</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+      
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="blog-image1.jpg" alt="Blog Post 1" class="w-full h-40 object-cover opacity-12">
+            <div class="p-4">
+                <h4 class="text-2xl font-bold text-white mb-2">Understanding Mind Maps</h4>
+                <p class="text-gray-400 text-sm mb-4">Learn how mind maps can boost productivity and streamline decision-making in your career.</p>
+                <a href="#" class="text-purple-400 font-semibold hover:text-purple-300">Read More →</a>
+            </div>
+        </div>
+       
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="blog-image2.jpg" alt="Blog Post 2" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h4 class="text-2xl font-bold text-white mb-2">Top 5 Tools for Career Growth</h4>
+                <p class="text-gray-400 text-sm mb-4">Explore the best tools and resources to take your career to the next level.</p>
+                <a href="#" class="text-purple-400 font-semibold hover:text-purple-300">Read More →</a>
+            </div>
+        </div>
+       
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="blog-image3.jpg" alt="Blog Post 3" class="w-full h-40 object-cover">
+            <div class="p-4">
+                <h4 class="text-2xl font-bold text-white mb-2">Mastering Career Transitions</h4>
+                <p class="text-gray-400 text-sm mb-4">Step-by-step guidance for switching careers without losing momentum.</p>
+                <a href="#" class="text-purple-400 font-semibold hover:text-purple-300">Read More →</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="contact">
+    <div class="bg-gray-900 py-16 text-center">
+        <h3 class="text-4xl font-semibold mb-4">Discover the Power of Mind Maps</h3>
+        <p class="text-lg">Streamline your decisions and elevate your career through structured guidance.</p>
+    </div>
+    <div class="bg-gray-900 py-16">
+        <h3 class="text-4xl font-semibold mb-8 text-center text-white">Contact Us</h3>
+        <div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+            <form action="#" method="POST" class="space-y-6">
+                
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required
+                        class="w-full bg-gray-700 text-white border border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+               
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        class="w-full bg-gray-700 text-white border border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+    
+               
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required
+                        class="w-full bg-gray-700 text-white border border-gray-600 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit"
+                       onclick="showAlert()" class="bg-purple-500 text-black px-8 py-2 text-lg font-semibold rounded-md shadow-md hover:bg-purple-400 transition duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+        <div class="mt-16 text-center text-gray-300">
+            <p class="text-lg">Email: <a href="mailto:support@mindmapmastery.com" class="text-purple-400 hover:underline">support@mindmapmastery.com</a></p>
+            <p class="text-lg">Phone: <a href="tel:+123456789" class="text-purple-400 hover:underline">+123 456 789</a></p>
+            <p class="text-lg">Address: 123 Lane, Hyderabad City</p>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Thank You for Contacting");
+        }
+        </script>
+</body>
+</html>
